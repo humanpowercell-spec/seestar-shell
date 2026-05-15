@@ -49,15 +49,36 @@ is built into this tool.  You do not need to extract it yourself.
 
 ### Signing and deploying
 
-1. **Build a firmware package** — `seestar-shell pack` tars a directory of
-   files, bzip2-compresses the archive, and appends an RSA-1024 PKCS#1v15
-   / SHA-1 signature using the recovered key — matching the format the
-   scope's updater expects.
+The firmware file format is:
 
-2. **Deploy to the scope** — `seestar-shell upload` (or the higher-level
-   `enable-ssh`, `cmd`, and `run-script` subcommands) connects over TCP,
-   streams the signed `.bz` file, and optionally waits for the scope to
-   reboot and come back online.
+```
+bzip2( tar( directory contents ) )  ||  RSA-1024 signature (128 bytes)
+```
+
+The scope's updater strips the last 128 bytes, verifies the RSA-PKCS#1v15/SHA-1
+signature over the bzip2 payload, then decompresses and applies the archive.
+
+The signature trailer was discovered by extracting a firmware file and
+repacking the same contents without any modifications.  The repacked file was
+consistently 128 bytes smaller than the original — exactly the size of an
+RSA-1024 signature (1024 bits / 8).  Treating the final 128 bytes of the
+original as a signature and the remainder as a bzip2 stream confirmed the
+format.
+
+A few details matter when producing a compatible package:
+
+- **tar format must be GNU** (`--format=gnu`).  The GNU tar format is what the
+  original firmware uses; using POSIX/PAX produces a different header layout.
+
+- **Ownership must be `xiongxiaofeng:1013`**.  The tar headers embed the owner
+  name and numeric uid/gid; the tool sets this explicitly on every entry.
+
+- **bzip2 at level 9**.  Lower compression levels produce valid but larger files.
+
+**Deploy to the scope** — `seestar-shell upload` (or the higher-level
+`enable-ssh`, `cmd`, and `run-script` subcommands) connects over TCP (ports
+4350 / 4361), negotiates the `begin_recv` handshake, streams the signed `.bz`,
+and optionally waits for the scope to reboot and come back online.
 
 ### Key surveillance
 
@@ -210,11 +231,3 @@ payload in the same on-device ceremony:
 Inspired by and built on top of prior work by
 [@bguthro](https://github.com/bguthro/seestar-tool), whose reverse
 engineering of the Seestar firmware update protocol made this possible.
-
----
-
-## Findings
-
-See `certificates/README.md` and
-`certificates/pem_inventory.json` for the full version-by-version survey
-of embedded keys across all published Seestar APK releases.
