@@ -1,0 +1,21 @@
+[build-system]
+requires = ["setuptools"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "seestar-shell"
+version = "0.1.0"
+description = "Security research toolkit for the ZWO Seestar telescope"
+readme = "README.md"
+requires-python = ">=3.10"
+dependencies = [
+    "requests",
+    "cryptography",
+]
+
+[project.scripts]
+seestar-shell = "seestar_shell.cli:main"
+
+[tool.setuptools.packages.find]
+where = ["."]
+include = ["seestar_shell*"]

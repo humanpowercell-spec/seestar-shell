@@ -1,0 +1,17 @@
+{
+  "version": "3.1.0",
+  "download_url": "https://download.pureapk.com/b/XAPK/Y29tLnp3by5zZWVzdGFyXzEyMF9jMjc5NGQ3ZA?_fn=U2Vlc3Rhcl92My4xLjBfYXBrcHVyZS5jb20ueGFwaw&as=b332ace432d39fb237ddc27633dc74156a087f2a&ai=489016392&at=1778855338&_sa=ai%2Cat&k=7dac58fd5b3fe939db665cce0ee97a3a6a09d0aa&_p=Y29tLnp3by5zZWVzdGFy&c=1%7CPHOTOGRAPHY%7CZGV2PVN1emhvdSUyMFpXTyUyMENvLiUyQyUyMEx0ZC4mdD14YXBrJnM9MTE5NTEyNDAxOCZ2bj0zLjEuMCZ2Yz0xMjAmaHQ9ZTAx&ht=e01R",
+  "xapk_size": 1195124018,
+  "so_files_found": [
+    "lib/arm64-v8a/libopenssllib.so"
+  ],
+  "pem_count": 1,
+  "pem_keys": [
+    "-----BEGIN PRIVATE KEY-----\nMIICdgIBADANBgkqhkiG9w0BAQEFAASCAmAwggJcAgEAAoGBAO0S7LqhYnfQP2vn\ns7sZE8s4fV/QJTv1uasQ/0vxgubBdCB9E9N56B+aZSxUf3M8kU7F0Y+pmCNv9T9z\nBzC7fu44SJYMgA2IgJOrGe6axLyTrxmYUXpsgC6HK6lfHCULFKOLrHX0WS+IKgm+\n14vHnA7+3Ic3LIzK/OryGktpgvXhAgMBAAECgYEAwwzu+B4PhcQwafcYSLc5Mdoo\nTMxT1iE1wSka4sCxkmlXweMmjLef42CEHRToR0dtxgG7iRdftMhIXwukvtOEeaUE\nqCyjzLfvSYqd1xTE6LCVCwp1vKLZUIc7BeY7Ae7kVkrmKknQtlCGmO8MxZ8tFPgS\nYVoUEzGBq1HztIDPTgECQQD95yTxHoBaEei9N/lkw5e3voiTomvlj8OA4n/BY0U1\n8s7LHCfxklHW1BLBcLuJZc+ChWnRbqD7PlyIcPud2ckFAkEA7wgybiAaCiPpZqGI\nMI3Xk8jIK7nPXCSW7eweq9jkfs6MqmYer2RDeqf2IJ87mZWQSY+p31XJcvgAHT7u\nT9IgLQJAX/2oWMRoUCUfMZJc5jyQOnZ9Wht44VRF3I9FL47hVrESf3WIoGrqJ+cL\npDiDnkFwf28C/5vsnrAH+cmFRztUJQJAIgSpoLCi5BSOUBPnHPni11541nhAQZ3X\neQ7kopJgmodsz4dvEIkVbWxgA+6FfesiOMXgaC9+VwVihscBBY0jFQJAGU+fIYC7\nehg/GNbyD+UNL8xKqx9Pe69Q58B3kRnfDBce5KReMO5nNr8o3Pa/yWNu7ZjKWs3N\nwzGGrKR8OsYqzw==\n-----END PRIVATE KEY-----"
+  ],
+  "pem_fingerprints": [
+    "a5abc56b8e6ee533"
+  ],
+  "scanned": true,
+  "scanned_at": "2026-05-15T14:40:52.793466+00:00"
+}
