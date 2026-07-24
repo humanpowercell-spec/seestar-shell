@@ -1,6 +1,6 @@
 # Seestar APK PEM Key Inventory
 
-_Generated: 2026-05-23T02:18:20.593264+00:00_
+_Generated: 2026-07-24T18:37:41.092421+00:00_
 
 ---
 
@@ -15,6 +15,7 @@ _Generated: 2026-05-23T02:18:20.593264+00:00_
 | 3.1.1 | 1 | yes | `a5abc56b8e6ee533` | ok |
 | 3.1.2 | 1 | yes | `a5abc56b8e6ee533` | ok |
 | 3.2.0 | 1 | yes | `a5abc56b8e6ee533` | ok |
+| 3.3.0 | 1 | yes | `a5abc56b8e6ee533` | ok |
 
 ---
 
@@ -200,6 +201,35 @@ wzGGrKR8OsYqzw==
 - **XAPK size**: 1,256,589,651 bytes
 - **SO files**: lib/armeabi-v7a/libopenssllib.so
 - **Scanned**: 2026-05-23T02:18:20.515972+00:00
+- **PEM keys found**: 1
+
+#### Key 1  —  fingerprint `a5abc56b8e6ee533`
+
+```
+-----BEGIN PRIVATE KEY-----
+MIICdgIBADANBgkqhkiG9w0BAQEFAASCAmAwggJcAgEAAoGBAO0S7LqhYnfQP2vn
+s7sZE8s4fV/QJTv1uasQ/0vxgubBdCB9E9N56B+aZSxUf3M8kU7F0Y+pmCNv9T9z
+BzC7fu44SJYMgA2IgJOrGe6axLyTrxmYUXpsgC6HK6lfHCULFKOLrHX0WS+IKgm+
+14vHnA7+3Ic3LIzK/OryGktpgvXhAgMBAAECgYEAwwzu+B4PhcQwafcYSLc5Mdoo
+TMxT1iE1wSka4sCxkmlXweMmjLef42CEHRToR0dtxgG7iRdftMhIXwukvtOEeaUE
+qCyjzLfvSYqd1xTE6LCVCwp1vKLZUIc7BeY7Ae7kVkrmKknQtlCGmO8MxZ8tFPgS
+YVoUEzGBq1HztIDPTgECQQD95yTxHoBaEei9N/lkw5e3voiTomvlj8OA4n/BY0U1
+8s7LHCfxklHW1BLBcLuJZc+ChWnRbqD7PlyIcPud2ckFAkEA7wgybiAaCiPpZqGI
+MI3Xk8jIK7nPXCSW7eweq9jkfs6MqmYer2RDeqf2IJ87mZWQSY+p31XJcvgAHT7u
+T9IgLQJAX/2oWMRoUCUfMZJc5jyQOnZ9Wht44VRF3I9FL47hVrESf3WIoGrqJ+cL
+pDiDnkFwf28C/5vsnrAH+cmFRztUJQJAIgSpoLCi5BSOUBPnHPni11541nhAQZ3X
+eQ7kopJgmodsz4dvEIkVbWxgA+6FfesiOMXgaC9+VwVihscBBY0jFQJAGU+fIYC7
+ehg/GNbyD+UNL8xKqx9Pe69Q58B3kRnfDBce5KReMO5nNr8o3Pa/yWNu7ZjKWs3N
+wzGGrKR8OsYqzw==
+-----END PRIVATE KEY-----
+```
+
+### 3.3.0
+
+- **Source URL**: https://download.pureapk.com/b/XAPK/Y29tLnp3by5zZWVzdGFyXzEzM19iZjI5ZGFlMw?_fn=U2Vlc3Rhcl92My4zLjBfYXBrcHVyZS5jb20ueGFwaw&as=a49ca75261a0d21496f414a145bc9b4b6a650264&ai=-155995300&at=1784918244&_sa=ai%2Cat&k=41e956c5e4e68c3db6ba1414b856d9d86a6653e4&_p=Y29tLnp3by5zZWVzdGFy&c=1%7CPHOTOGRAPHY%7CZGV2PVN1emhvdSUyMFpXTyUyMENvLiUyQyUyMEx0ZC4mdD14YXBrJnM9MTM1NzEzNjY2NSZ2bj0zLjMuMCZ2Yz0xMzM
+- **XAPK size**: 1,357,136,665 bytes
+- **SO files**: lib/armeabi-v7a/libopenssllib.so
+- **Scanned**: 2026-07-24T18:37:40.955370+00:00
 - **PEM keys found**: 1
 
 #### Key 1  —  fingerprint `a5abc56b8e6ee533`
